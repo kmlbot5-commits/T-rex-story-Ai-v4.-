@@ -1,0 +1,19 @@
+<!doctype html><html lang="km"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trex Story AI 🦖 — Khmer Dub</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><div class="logo">🦖</div><div><h1>Trex Story AI</h1><p>Khmer Dub Studio</p></div></header>
+<section class="card">
+<div id="drop" class="drop"><div class="film">🎬</div><h2>ដាក់វីដេអូរឿងរបស់អ្នក</h2>
+<p>AI នឹងបកប្រែសំឡេងទៅជាភាសាខ្មែរ និងបង្កើត MP4 ថ្មី</p>
+<input id="video" type="file" accept="video/*" hidden><button id="choose">📤 Upload Video</button><div id="fileName"></div></div>
+<div class="grid">
+<label>ភាសាដើម<select id="source"><option value="auto">Auto Detect</option><option>English</option><option>Korean</option><option>Chinese</option><option>Japanese</option></select></label>
+<label>Khmer Voice<select id="voice"><option value="female">Female — Natural</option><option value="male">Male — Natural</option></select></label>
+<label>Style<select id="style"><option value="natural">Natural Dub</option><option value="cinematic">Cinematic</option><option value="story">Story Narration</option></select></label>
+</div>
+<button id="generate" class="primary" disabled>🎙️ Generate Khmer Dub</button>
+<div id="status" class="status hidden"></div>
+<div id="result" class="result hidden"><h2>🎉 Khmer Dub Ready</h2><video id="preview" controls></video><a id="download" class="download">⬇️ Download Khmer Dub MP4</a></div>
+</section>
+</main><script src="/app.js"></script></body></html>
